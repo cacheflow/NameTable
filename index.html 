@@ -30,7 +30,7 @@
 			<tbody>
 				<tr x-ng-repeat="d in data">
 					<td x-ng-repeat="f in sorted_columns">
-						{{e[f.title]}}
+						{{d[f.title]}}
 					</td>
 				</tr>
 			</tbody>
