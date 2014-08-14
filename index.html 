@@ -3,6 +3,7 @@
 <head>
 	<title>Collection of names</title>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></script>
+	<script src="script.js"></script>
 </head>
 <body x-ng-app="app" x-ng-controller="table_controller">
 
