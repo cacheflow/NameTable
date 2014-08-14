@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collection of names</title>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"></script>
+</head>
+<body x-ng-app="app" x-ng-controller="table_controller">
+
+	<h1>Collection of names</h1>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<p>Filters</p>
+
+					<div x-ng-repeat="f in all_fields">
+						<label>
+							<input type="checkbox" x-ng-model="f.checked">
+								{{f.title}}
+						</label>
+					</div>		
+				</div>
+			</div>	
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th x-ng-repeat="f in sorted_columns">{{f.title}}</th>
+			</tr>
+			<tbody>
+				<tr x-ng-repeat="d in data">
+					<td x-ng-repeat="f in sorted_columns">
+						{{e[f.title]}}
+					</td>
+				</tr>
+			</tbody>
+
+		</thead>
+
+
+
+
+	</table>
+
+</body>
+
+</html>
